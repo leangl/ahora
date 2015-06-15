@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/celeste_club_transparent">
+
+    <ImageView
+        android:id="@+id/checked"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/checked"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/subcategory_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/checked"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|left"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:text="Subcategory" />
+
+</RelativeLayout>

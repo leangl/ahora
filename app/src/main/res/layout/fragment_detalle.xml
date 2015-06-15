@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/maps_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"/>
+
+        <ImageView
+            android:id="@+id/street"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/maps_layout"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/maps_layout"
+        android:background="@drawable/gradient"/>
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/percentage_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/guardar_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        app:customFont="HelveticaNeueLTStd-Roman.otf"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:text="30%"/>
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:customFont="HelveticaNeueLTStd-Roman.otf"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/direccion"
+        android:layout_toRightOf="@+id/percentage_detail"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        android:text="pizzeria don pedro"/>
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/descripcion"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/percentage_detail"
+        app:customFont="HelveticaNeueLTStd-Roman.otf"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:text="thames 2030"/>
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/percentage_detail"
+        android:layout_above="@+id/guardar_button"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        app:customFont="HelveticaNeueLTStd-Roman.otf"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:text="pizzeria de primera, se come bien"/>
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/guardar_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="@string/guardar"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:background="@color/black_transparent"/>
+
+
+</RelativeLayout>

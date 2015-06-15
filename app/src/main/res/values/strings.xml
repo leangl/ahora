@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Club La Nacion</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_wizard">WizardActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="loading">Cargando...</string>
+    <string name="error_loading">Se ha producido un error, por favor vuelva a intentarlo más tarde</string>
+    <string name="empty_list">No se encontraron beneficios</string>
+
+    <string name="fecha_hasta">Valido hasta el %1$s</string>
+    <string name="ahorra">Ahorra</string>
+    <string name="salida">Salimos?</string>
+    <string name="buscar">Ahora</string>
+    <string name="guardar">Guardar</string>
+    <string name="guardados">Guardados</string>
+    <string name="beneficios">Beneficios</string>
+
+    <string name="hoy_voy">Voy a ir a</string>
+    <string name="y">y quiero</string>
+    <string name="o">o ir</string>
+    <string name="proximas">en las próximas</string>
+
+    <string name="elegir">elegir</string>
+    <string name="guardado">Guardaste este beneficio!</string>
+
+</resources>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home">
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/azul_oscuro"
+        app:customFont="HelveticaNeueLTStd-Roman.otf"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:text="@string/beneficios"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <com.lanacion.ahora.views.CustomFontTextView
+            android:id="@+id/salir_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:text="@string/salida"
+            android:textAllCaps="false"
+            app:customFont="HelveticaNeueLTStd-Roman.otf"
+            android:textColor="@android:color/white"
+            android:background="@color/black_transparent" />
+
+        <com.lanacion.ahora.views.CustomFontTextView
+            android:id="@+id/ver_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:text="@string/guardados"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:customFont="HelveticaNeueLTStd-Roman.otf"
+            android:background="@color/azul_oscuro" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/benefits_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_bar"
+        android:layout_above="@+id/buttons"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp" />
+
+
+    <TextView
+        android:id="@+id/empty_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/empty_list"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

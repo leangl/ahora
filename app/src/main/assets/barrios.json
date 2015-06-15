@@ -1,0 +1,147 @@
+[
+  {
+    "Nombre":"Palermo",
+    "Longitude":-58.42271602,
+    "Latitude":-34.57439541
+  },
+  {
+    "Nombre":"Recoleta",
+    "Longitude":-58.39646375,
+    "Latitude":-34.58455461
+  },
+  {
+    "Nombre":"Puerto Madero",
+    "Longitude":-58.35262667,
+    "Latitude":-34.61011582
+  },
+  {
+    "Nombre":"Villa Crespo",
+    "Longitude":-58.4418492,
+    "Latitude":-34.59814167
+  },
+  {
+    "Nombre":"Belgrano",
+    "Longitude":-58.44645213,
+    "Latitude":-34.55326787
+  },
+  {
+    "Nombre":"Chacarita",
+    "Longitude":-58.45180209,
+    "Latitude":-34.58806471
+  },
+  {
+    "Nombre":"Barracas",
+    "Longitude":-58.38291695,
+    "Latitude":-34.64457555
+  },
+  {
+    "Nombre":"Colegiales",
+    "Longitude":-58.45310388,
+    "Latitude":-34.57463957
+  },
+  {
+    "Nombre":"Paternal",
+    "Longitude":-58.4715642,
+    "Latitude":-34.59637823
+  },
+  {
+    "Nombre":"San Telmo",
+    "Longitude":-58.37155497,
+    "Latitude":-34.62255947
+  },
+  {
+    "Nombre":"Villa Ortuzar",
+    "Longitude":-58.46729958,
+    "Latitude":-34.58154463
+  },
+  {
+    "Nombre":"Almagro",
+    "Longitude":-58.42246328,
+    "Latitude":-34.60989367
+  },
+  {
+    "Nombre":"Caballito",
+    "Longitude":-58.4435325,
+    "Latitude":-34.61665628
+  },
+  {
+    "Nombre":"Flores",
+    "Longitude":-58.46218737,
+    "Latitude":-34.63534602
+  },
+  {
+    "Nombre":"Parque Patricios",
+    "Longitude":-58.40063011,
+    "Latitude":-34.63791795
+  },
+  {
+    "Nombre":"Balvanera",
+    "Longitude":-58.40326817,
+    "Latitude":-34.60932271
+  },
+  {
+    "Nombre":"Mataderos",
+    "Longitude":-58.50177391,
+    "Latitude":-34.65895902
+  },
+  {
+    "Nombre":"Saavedra",
+    "Longitude":-58.48890309,
+    "Latitude":-34.55431388
+  },
+  {
+    "Nombre":"Escollera Exterior",
+    "Longitude":-58.35726851,
+    "Latitude":-34.58318393
+  },
+  {
+    "Nombre":"Villa Urquiza",
+    "Longitude":-58.48727484,
+    "Latitude":-34.57196127
+  },
+  {
+    "Nombre":"Villa Gral. Mitre",
+    "Longitude":-58.4698306,
+    "Latitude":-34.61050784
+  },
+  {
+    "Nombre":"Agronomia",
+    "Longitude":-58.48839515,
+    "Latitude":-34.59224458
+  },
+  {
+    "Nombre":"Parque Avellaneda",
+    "Longitude":-58.47737779,
+    "Latitude":-34.649714
+  },
+  {
+    "Nombre":"Parque Chacabuco",
+    "Longitude":-58.43793034,
+    "Latitude":-34.63717543
+  },
+  {
+    "Nombre":"Nueva Pompeya",
+    "Longitude":-58.41777725,
+    "Latitude":-34.65007734
+  },
+  {
+    "Nombre":"Liniers",
+    "Longitude":-58.51663577,
+    "Latitude":-34.64484452
+  },
+  {
+    "Nombre":"Versalles",
+    "Longitude":-58.52307395,
+    "Latitude":-34.62917326
+  },
+  {
+    "Nombre":"Monserrat",
+    "Longitude":-58.3794389,
+    "Latitude":-34.6123306
+  },
+  {
+    "Nombre":"Nuñez",
+    "Longitude":-58.46113503,
+    "Latitude":-34.5432348
+  }
+]

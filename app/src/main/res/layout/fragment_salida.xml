@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logowhite"/>
+
+        <com.lanacion.ahora.views.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="26sp"
+            android:text="@string/hoy_voy"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner">
+
+            <Spinner
+                android:id="@+id/barrios_spinner"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <com.lanacion.ahora.views.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:text="@string/y"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner">
+
+            <Spinner
+                android:id="@+id/comida_spinner"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:prompt="@string/elegir"
+                android:entries="@array/comida"/>
+
+        </RelativeLayout>
+
+        <com.lanacion.ahora.views.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:text="@string/o"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_spinner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner">
+
+            <Spinner
+                android:id="@+id/salida_spinner"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:prompt="@string/elegir"
+                android:entries="@array/salida"/>
+
+        </RelativeLayout>
+
+        <com.lanacion.ahora.views.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:text="@string/proximas"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_spinner4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner">
+
+            <Spinner
+                android:id="@+id/horas_spinner"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:prompt="@string/elegir"
+                android:entries="@array/horas"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/aceptar_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="@string/buscar"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:background="@color/black_transparent"/>
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lanacion.ahora.wizard.WizardStep"
+    android:animateLayoutChanges="true">
+
+    <ImageButton
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:background="@drawable/gastronomia_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_transparent_2" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="¿Te interesa?"
+        android:background="@color/white_transparent" />
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/azul_club"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        tools:text="gastronomía" />
+
+
+    <RelativeLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@color/white_transparent"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/anchor"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp" />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toLeftOf="@+id/anchor"
+            android:layout_alignBottom="@+id/anchor"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/check"
+            android:background="@drawable/wizard_check_selector" />
+
+        <ImageView
+            android:id="@+id/dislike"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/anchor"
+            android:layout_alignBottom="@+id/anchor"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/cross"
+            android:background="@drawable/wizard_cross_selector" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/button_container"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saltear Todos"
+            android:textColor="@color/azul_club"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/azul_club" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subCategoriesStep"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white_transparent"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/category_name_step2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/azul_club"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            tools:text="gastronomía" />
+
+        <ListView
+            android:id="@+id/subcategories"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            tools:listitem="@layout/subcategory" />
+
+        <Button
+            android:id="@+id/nextStep"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Continuar"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_selector" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_benefit"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:minHeight="150dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/image_benefit"
+        android:background="@drawable/gradient" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo"
+        android:background="@android:color/white" />
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/title_benefit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_benefit"
+        android:layout_toLeftOf="@+id/logo"
+        android:paddingTop="10dp"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        app:customFont="HelveticaNeueLTStd-Bd.otf" />
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/ahorra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/percentage"
+        android:layout_above="@+id/percentage"
+        android:text="@string/ahorra"
+        android:textColor="@color/amarillo"
+        app:customFont="HelveticaNeueLTStd-Roman.otf"
+        android:textSize="16sp" />
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_benefit"
+        android:layout_alignLeft="@+id/image_benefit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:customFont="HelveticaNeueLTStd-Roman.otf"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+    <com.lanacion.ahora.views.CustomFontTextView
+        android:id="@+id/fecha_hasta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="24sp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignBottom="@+id/image_benefit"
+        android:textColor="@android:color/white"
+        app:customFont="HelveticaNeueLTStd-Roman.otf" />
+
+</RelativeLayout>

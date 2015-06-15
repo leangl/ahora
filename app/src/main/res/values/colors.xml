@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="azul_club">#005b96</color>
+    <color name="azul_club_transparent">#80005b96</color>
+    <color name="celeste_club">#107c99</color>
+    <color name="celeste_club_transparent">#c8107c99</color>
+    <color name="azul_oscuro">#0f2645</color>
+    <color name="gris_bordes">#3b474c</color>
+    <color name="gris_claro_bordes">#818282</color>
+    <color name="gris_contenedor">#e0e0e0</color>
+
+
+    <color name="amarillo">#ffe300</color>
+
+    <color name="gastronomia">#f39200</color>
+    <color name="entretenimiento">#951b81</color>
+    <color name="turismo">#387738</color>
+    <color name="cuidado_personal">#49bed6</color>
+    <color name="mas_categoria">#fc2c03</color>
+    <color name="moda">#e72b71</color>
+    <color name="white_transparent">#C8ffffff</color>
+    <color name="white_transparent_2">#60ffffff</color>
+    <color name="black_transparent">#60000000</color>
+    <color name="blue_transparent">#c80f2645</color>
+
+</resources>

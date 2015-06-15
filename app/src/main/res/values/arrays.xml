@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="comida">
+        <item>Cenar Acompañado</item>
+        <item>Bares con Amigos</item>
+        <item>Sorprendeme</item>
+        <item>Vivir un momento relajante</item>
+    </string-array>
+
+    <string-array name="salida">
+        <item>Cine</item>
+        <item>Teatro</item>
+        <item>Recitales</item>
+        <item>Cuturales</item>
+    </string-array>
+
+    <string-array name="horas">
+        <item>1 Hora</item>
+        <item>2 Horas</item>
+        <item>3 Horas</item>
+        <item>4 Horas</item>
+    </string-array>
+</resources>
